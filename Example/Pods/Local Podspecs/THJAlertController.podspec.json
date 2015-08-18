@@ -1,0 +1,25 @@
+{
+  "name": "THJAlertController",
+  "version": "0.1.0",
+  "summary": "A short description of THJAlertController.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/THJAlertController",
+  "license": "MIT",
+  "authors": {
+    "Thanyaluk Jirapech-umpai": "thanyaluk.jirapech-umpai@kotikan.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/THJAlertController.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "THJAlertController": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

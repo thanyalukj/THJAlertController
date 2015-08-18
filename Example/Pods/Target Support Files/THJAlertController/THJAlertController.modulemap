@@ -1,0 +1,6 @@
+framework module THJAlertController {
+  umbrella header "THJAlertController-umbrella.h"
+
+  export *
+  module * { export * }
+}
