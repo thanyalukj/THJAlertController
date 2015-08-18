@@ -7,6 +7,6 @@ end
 
 target 'THJAlertController_Tests', :exclusive => true do
   pod "THJAlertController", :path => "../"
-
+  pod "OCMock", "~>3.1"
   
 end
