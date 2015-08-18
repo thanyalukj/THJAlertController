@@ -24,7 +24,7 @@ pod "THJAlertController"
 
 ## Author
 
-Thanyaluk Jirapech-umpai, thanyaluk.jirapech-umpai@kotikan.com
+Thanyaluk Jirapech-umpai
 
 ## License
 
