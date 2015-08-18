@@ -7,9 +7,9 @@
 
 UIAlertController that displays on top of any UIViewController.
 
-Moving away from UIAlertView to UIAlertController is not fun because the fundamental of UIAlertView and UIAlertController is so different. OS treat UIAlertView as a subclass of UIView and put it on top of UIWindow for us. UIAlertController is now a subclass of UIViewController. To present Alert, we need to call `- presentViewController:animated:completion:`
+Moving away from UIAlertView to UIAlertController is not fun because the fundamental of UIAlertView and UIAlertController is so different. iOS treats UIAlertView as a subclass of UIView and put it on top of UIWindow for us. UIAlertController is now a subclass of UIViewController. To present the alert, we need to call `- presentViewController:animated:completion:` from the UIViewController.
 
-Since legacy codes that I work with do not always create the UIAlertView inside the UIViewController (ie. some singleton classes that deal with location service.) I need a UIAlertController that could display anywhere on top of the app like UIAlertView used to do. 
+Since legacy codes does not always present UIAlertView inside the UIViewController (ie. some singleton classes dealing with location service, etc.) So, I need a UIAlertController that could display anywhere on top of the app like UIAlertView used to do. 
 
 So, I created THJAlertController which is a subclass of UIAlertController create a new UIWindow and UIViewController on top of the current UIWindow.
 
