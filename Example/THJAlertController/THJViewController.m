@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Thanyaluk Jirapech-umpai. All rights reserved.
 //
 
+#import <THJAlertController/THJAlertController.h>
 #import "THJViewController.h"
 
 @interface THJViewController ()
@@ -14,16 +15,17 @@
 
 @implementation THJViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+- (IBAction)displayAlert:(id)sender {
+    THJAlertController *alertController = [THJAlertController THJAlertControllerWithTitle:@"hello"
+                                                                                     message:@"This alert view is display on top of the UIWindow"
+                                                                              preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+    [alertController addAction:okAction];
+    [alertController show];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)presentModalViewController:(id)sender {
+    [self performSegueWithIdentifier:@"presentModalView" sender:self];
 }
 
 @end

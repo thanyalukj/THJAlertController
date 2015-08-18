@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3044E86A19F36C49DB32F564 /* THJModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E78A6F2CA486393C11BB /* THJModalViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,6 +23,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		6390317ACFAA90E04E4A2694 /* Pods_THJAlertController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BF52FE4D372B05494940DC /* Pods_THJAlertController_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		9C9E93271B83ED3D0059177C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9E93261B83ED3D0059177C /* LaunchScreen.storyboard */; };
 		A1390966A8C1C9241DED3589 /* Pods_THJAlertController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E75A4068D4FD33575088188 /* Pods_THJAlertController_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		1006BCC2A1F86148EEB9D31C /* THJAlertController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = THJAlertController.podspec; path = ../THJAlertController.podspec; sourceTree = "<group>"; };
 		1E75A4068D4FD33575088188 /* Pods_THJAlertController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_THJAlertController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29EA21F889FE54F6750C9B24 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3044E0D3006B57024D4953E1 /* THJModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THJModalViewController.h; sourceTree = "<group>"; };
+		3044E78A6F2CA486393C11BB /* THJModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THJModalViewController.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* THJAlertController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THJAlertController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,6 +65,7 @@
 		76BF52FE4D372B05494940DC /* Pods_THJAlertController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_THJAlertController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		803E6E41AFF275F6D7E2DC22 /* Pods-THJAlertController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THJAlertController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THJAlertController_Example/Pods-THJAlertController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9C9E93261B83ED3D0059177C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA2D87B42DCDF0FFA3F9BCEE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B725FE8663A895C260ABC7BD /* Pods-THJAlertController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THJAlertController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-THJAlertController_Tests/Pods-THJAlertController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CCF068D7F34BE61A09CFD77F /* Pods-THJAlertController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THJAlertController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-THJAlertController_Example/Pods-THJAlertController_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +153,9 @@
 				6003F5A6195388D20070C39A /* THJViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				3044E78A6F2CA486393C11BB /* THJModalViewController.m */,
+				3044E0D3006B57024D4953E1 /* THJModalViewController.h */,
+				9C9E93261B83ED3D0059177C /* LaunchScreen.storyboard */,
 			);
 			name = "Example for THJAlertController";
 			path = THJAlertController;
@@ -244,7 +252,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = THJ;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Thanyaluk Jirapech-umpai";
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
@@ -277,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				9C9E93271B83ED3D0059177C /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -393,6 +402,7 @@
 				6003F59E195388D20070C39A /* THJAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* THJViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				3044E86A19F36C49DB32F564 /* THJModalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +462,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -511,11 +522,11 @@
 			baseConfigurationReference = 803E6E41AFF275F6D7E2DC22 /* Pods-THJAlertController_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "THJAlertController/THJAlertController-Prefix.pch";
 				INFOPLIST_FILE = "THJAlertController/THJAlertController-Info.plist";
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -526,11 +537,11 @@
 			baseConfigurationReference = CCF068D7F34BE61A09CFD77F /* Pods-THJAlertController_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "THJAlertController/THJAlertController-Prefix.pch";
 				INFOPLIST_FILE = "THJAlertController/THJAlertController-Info.plist";
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -553,6 +564,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/THJAlertController_Example.app/THJAlertController_Example";
 				WRAPPER_EXTENSION = xctest;
@@ -572,6 +584,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/THJAlertController_Example.app/THJAlertController_Example";
 				WRAPPER_EXTENSION = xctest;
