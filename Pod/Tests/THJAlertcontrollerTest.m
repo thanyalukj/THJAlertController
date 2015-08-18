@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "OCMockObject.h"
+#import "OCMArg.h"
+#import "THJAlertController.h"
+#import "OCMStubRecorder.h"
 
 @interface THJAlertcontrollerTest : XCTestCase
 
@@ -28,7 +32,7 @@
     [[_mockWindow expect] setRootViewController:[OCMArg checkWithBlock:^BOOL(id obj) {
         return [obj isKindOfClass:[UIViewController class]];
     }]];
-    (void) [FDLAlertController fdlAlertControllerWithTitle:@"title"
+    (void) [THJAlertController THJAlertControllerWithTitle:@"title"
                                                    message:@"message"
                                             preferredStyle:UIAlertControllerStyleAlert
                                                alertWindow:(id) _mockWindow];
@@ -37,7 +41,7 @@
 
 - (void)test_creation_expectWindowSetWindowLevelToBeHigherThanWindowAlertLevel {
     [[_mockWindow expect] setWindowLevel:UIWindowLevelAlert + 1];
-    (void) [FDLAlertController fdlAlertControllerWithTitle:@"title"
+    (void) [THJAlertController THJAlertControllerWithTitle:@"title"
                                                    message:@"message"
                                             preferredStyle:UIAlertControllerStyleAlert
                                                alertWindow:(id) _mockWindow];
@@ -46,7 +50,7 @@
 
 - (void)test_show_expectRootViewControllerToPresentAlert {
     [[[_mockWindow stub] andReturn:_mockRootViewController] rootViewController];
-    FDLAlertController *sut = [FDLAlertController fdlAlertControllerWithTitle:@"title"
+    THJAlertController *sut = [THJAlertController THJAlertControllerWithTitle:@"title"
                                                                       message:@"message"
                                                                preferredStyle:UIAlertControllerStyleAlert
                                                                   alertWindow:(id) _mockWindow];
@@ -57,8 +61,5 @@
 
     [_mockRootViewController verify];
 }
-
-@end
-
 
 @end
