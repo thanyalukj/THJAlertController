@@ -34,3 +34,5 @@ Carthage
 # Pods/
 .idea
 Example/Pods
+
+*.lock

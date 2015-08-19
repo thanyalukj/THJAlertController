@@ -11,17 +11,13 @@ Pod::Spec.new do |s|
   s.version          = "0.1.0"
   s.summary          = "A UIAlertController that display on without the need of view controller."
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.description  = <<-DESC
+                    A subclass of UIAlertController that create its own UIWindow and rootViewController on top of the app UIWindow. So, the alert could be presented in the app wihout specifying the parent UIViewController to present one.
+                    DESC
   s.homepage         = "https://github.com/thanyalukj/THJAlertController"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Thanyaluk Jirapech-umpai" => "thanyalukj@gmail.com" }
   s.source           = { :git => "https://github.com/thanyalukj/THJAlertController.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/thanyalukj'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true

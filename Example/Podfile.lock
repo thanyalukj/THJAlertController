@@ -8,10 +8,10 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   THJAlertController:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   OCMock: a10ea9f0a6e921651f96f78b6faee95ebc813b92
   THJAlertController: 9193ea615859391268efd4c5b201ae2df29d3b3c
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.37.2
