@@ -17,10 +17,6 @@
                                     message:(NSString *)message
                              preferredStyle:(UIAlertControllerStyle)preferredStyle;
 
-+ (instancetype)THJAlertControllerWithTitle:(NSString *)title
-                                    message:(NSString *)message
-                             preferredStyle:(UIAlertControllerStyle)preferredStyle
-                                alertWindow:(UIWindow *)alertWindow;
 - (void)show;
 
 @end

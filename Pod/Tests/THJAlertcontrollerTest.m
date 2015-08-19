@@ -1,5 +1,5 @@
 //
-//  THJAlertcontrollerTest.m
+//  THJAlertControllerTest.m
 //  THJAlertController
 //
 //  Created by Thanyaluk on 18/08/15.
@@ -13,11 +13,18 @@
 #import "THJAlertController.h"
 #import "OCMStubRecorder.h"
 
-@interface THJAlertcontrollerTest : XCTestCase
+@interface THJAlertController (Tests)
++ (instancetype)THJAlertControllerWithTitle:(NSString *)title
+                                    message:(NSString *)message
+                             preferredStyle:(UIAlertControllerStyle)preferredStyle
+                                alertWindow:(UIWindow *)alertWindow;
+@end
+
+@interface THJAlertControllerTest : XCTestCase
 
 @end
 
-@implementation THJAlertcontrollerTest {
+@implementation THJAlertControllerTest {
     OCMockObject *_mockWindow;
     OCMockObject *_mockRootViewController;
 }

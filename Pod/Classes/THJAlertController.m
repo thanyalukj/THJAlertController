@@ -37,6 +37,7 @@
 }
 
 - (void)show {
+    NSAssert(self.alertWindow, @"To use show(), create THJAlertController with THJAlertControllerWithTitle:message:preferredStyle");
     [self.alertWindow makeKeyAndVisible];
     [self.alertWindow.rootViewController presentViewController:self animated:YES completion:nil];
 }
