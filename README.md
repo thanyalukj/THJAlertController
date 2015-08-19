@@ -10,7 +10,7 @@ Moving away from UIAlertView to UIAlertController is not fun because the fundame
 
 Since legacy codes does not always present UIAlertView inside the UIViewController (ie. some singleton classes dealing with location service, etc.) So, I need a UIAlertController that could display anywhere on top of the app like UIAlertView used to do. 
 
-So, I created THJAlertController which is a subclass of UIAlertController create a new UIWindow and UIViewController on top of the current UIWindow.
+So, I looked around and found https://github.com/dbettermann/DBAlertController which is what I want. The only problem is I need objective-c version. So, I created THJAlertController which is a subclass of UIAlertController create a new UIWindow and UIViewController on top of the current UIWindow.
 
 ## Usage
 
