@@ -28,4 +28,13 @@
     [self performSegueWithIdentifier:@"presentModalView" sender:self];
 }
 
+- (IBAction)displayAlertAssertionError:(id)sender {
+    THJAlertController *alertController = [THJAlertController alertControllerWithTitle:@"hello"
+                                                                               message:@"this wont be shown on screen"
+                                                                        preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+    [alertController addAction:okAction];
+    [alertController show];
+}
+
 @end

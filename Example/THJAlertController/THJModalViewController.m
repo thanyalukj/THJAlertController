@@ -28,6 +28,11 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+/**
+* If we try to display alert when the view controller is being dismissed,
+* there is a warning: Attempt to present < UIAlertViewController: 0x.. > on < UIViewController: 0x...> whose view is not in the window hierarchy!  The alert also does not show.
+* Display alert in it's own UIWindow will get rid of the warning and actually show the alert on top of the screen.
+*/
 - (IBAction)scheduleAlertAndDismiss:(id)sender {
     [self performSelector:@selector(displayAlert:) withObject:self afterDelay:0.2];
     [self dismissModal:nil];

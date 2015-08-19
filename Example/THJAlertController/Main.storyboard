@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Root-->
@@ -19,26 +18,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eb1-lV-uP2">
-                                <rect key="frame" x="178" y="245" width="245" height="30"/>
-                                <state key="normal" title="Display Alert on RootViewController"/>
+                                <rect key="frame" x="264" y="60" width="72" height="30"/>
+                                <state key="normal" title="show alert"/>
                                 <connections>
                                     <action selector="displayAlert:" destination="whP-gf-Uak" eventType="touchUpInside" id="iyQ-07-zC5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhy-0I-0jb">
-                                <rect key="frame" x="196" y="295" width="208" height="30"/>
-                                <state key="normal" title="Present Modal View Controller"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhy-0I-0jb">
+                                <rect key="frame" x="241" y="110" width="118" height="30"/>
+                                <state key="normal" title="show modal view"/>
                                 <connections>
                                     <action selector="presentModalViewController:" destination="whP-gf-Uak" eventType="touchUpInside" id="gXt-ba-ej5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYQ-Iq-ogI">
+                                <rect key="frame" x="176" y="160" width="248" height="30"/>
+                                <state key="normal" title="show alert + alertControllerWithTitle"/>
+                                <connections>
+                                    <action selector="displayAlertAssertionError:" destination="whP-gf-Uak" eventType="touchUpInside" id="C4L-Ap-f57"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="aYQ-Iq-ogI" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="8A9-C6-NfT"/>
                             <constraint firstItem="vhy-0I-0jb" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="Bau-nR-itb"/>
+                            <constraint firstItem="eb1-lV-uP2" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="40" id="NG9-bJ-EM8"/>
                             <constraint firstItem="vhy-0I-0jb" firstAttribute="top" secondItem="eb1-lV-uP2" secondAttribute="bottom" constant="20" id="Uc8-EY-W0k"/>
+                            <constraint firstItem="aYQ-Iq-ogI" firstAttribute="top" secondItem="vhy-0I-0jb" secondAttribute="bottom" constant="20" id="foE-hj-MHP"/>
                             <constraint firstItem="eb1-lV-uP2" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="hdI-1R-rgb"/>
-                            <constraint firstItem="eb1-lV-uP2" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" constant="-40" id="s2p-gu-dkN"/>
                         </constraints>
                     </view>
                     <connections>
@@ -62,53 +70,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oh2-pp-K2R">
-                                <rect key="frame" x="183" y="104" width="234" height="30"/>
-                                <state key="normal" title="Display Alert on top of modal view"/>
+                                <rect key="frame" x="191" y="104" width="218" height="30"/>
+                                <state key="normal" title="show alert on top of modal view"/>
                                 <connections>
                                     <action selector="displayAlert:" destination="Lc2-Fi-HuR" eventType="touchUpInside" id="Dz5-nT-TF7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNk-a3-JWF">
-                                <rect key="frame" x="132" y="153" width="337" height="30"/>
-                                <state key="normal" title="schedule alertview to display after dismiss is call."/>
+                                <rect key="frame" x="164" y="153" width="272" height="30"/>
+                                <state key="normal" title="Schedule alert after dismiss modal view"/>
                                 <connections>
                                     <action selector="scheduleAlertAndDismiss:" destination="Lc2-Fi-HuR" eventType="touchUpInside" id="bC8-Wo-c3B"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R91-Ci-Tg8">
-                                <rect key="frame" x="40" y="199" width="520" height="67"/>
-                                <string key="text">If we try to display alert when the viewcontroller is being dismissed, 
-there is a warning: Attempt to present &lt; UIAlertViewController: 0x.. &gt; on &lt; UIViewController: 0x...&gt; whose view is not in the window hierarchy!  The alert also does not show.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Display alert in it's own UIWindow will get rid of the warning and actualy show the alert." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLx-2k-MlC">
-                                <rect key="frame" x="20" y="286" width="540" height="16"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="gLx-2k-MlC" secondAttribute="trailing" constant="20" id="7yK-mA-mHp"/>
-                            <constraint firstItem="oh2-pp-K2R" firstAttribute="centerY" secondItem="QJr-HC-1jx" secondAttribute="centerY" constant="-40" id="Ayk-iV-SCB"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="gLx-2k-MlC" secondAttribute="leading" id="JAa-dE-3hF"/>
-                            <constraint firstItem="R91-Ci-Tg8" firstAttribute="top" secondItem="HNk-a3-JWF" secondAttribute="bottom" constant="16" id="NZR-AC-lz6"/>
                             <constraint firstItem="oh2-pp-K2R" firstAttribute="top" secondItem="Tdj-Md-kiE" secondAttribute="bottom" constant="40" id="OAj-IY-n9C"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="R91-Ci-Tg8" secondAttribute="trailing" constant="20" id="OtD-t4-LFG"/>
-                            <constraint firstItem="R91-Ci-Tg8" firstAttribute="leading" secondItem="QJr-HC-1jx" secondAttribute="leadingMargin" constant="20" id="Rgs-cc-L2S"/>
                             <constraint firstItem="HNk-a3-JWF" firstAttribute="top" secondItem="oh2-pp-K2R" secondAttribute="bottom" constant="19" id="aX5-DQ-z2M"/>
                             <constraint firstItem="oh2-pp-K2R" firstAttribute="centerX" secondItem="QJr-HC-1jx" secondAttribute="centerX" id="m6b-Vx-bdh"/>
-                            <constraint firstItem="gLx-2k-MlC" firstAttribute="top" secondItem="R91-Ci-Tg8" secondAttribute="bottom" constant="20" id="qXX-Cp-Nlu"/>
                             <constraint firstItem="HNk-a3-JWF" firstAttribute="centerX" secondItem="QJr-HC-1jx" secondAttribute="centerX" id="vrf-al-9ir"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Ayk-iV-SCB"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Modal" id="x7E-XS-svR">
                         <barButtonItem key="rightBarButtonItem" title="Close" id="c81-fY-adn">
