@@ -1,6 +1,5 @@
 # THJAlertController
 
-[![CI Status](http://img.shields.io/travis/Thanyaluk Jirapech-umpai/THJAlertController.svg?style=flat)](https://travis-ci.org/Thanyaluk Jirapech-umpai/THJAlertController)
 [![Version](https://img.shields.io/cocoapods/v/THJAlertController.svg?style=flat)](http://cocoapods.org/pods/THJAlertController)
 [![License](https://img.shields.io/cocoapods/l/THJAlertController.svg?style=flat)](http://cocoapods.org/pods/THJAlertController)
 [![Platform](https://img.shields.io/cocoapods/p/THJAlertController.svg?style=flat)](http://cocoapods.org/pods/THJAlertController)

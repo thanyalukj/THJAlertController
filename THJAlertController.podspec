@@ -12,7 +12,8 @@ Pod::Spec.new do |s|
   s.summary          = "A UIAlertController that display on without the need of view controller."
 
   s.description  = <<-DESC
-                    A subclass of UIAlertController that create its own UIWindow and rootViewController on top of the app UIWindow. So, the alert could be presented in the app wihout specifying the parent UIViewController to present one.
+                    A subclass of UIAlertController that create its own UIWindow and rootViewController on top of the app UIWindow.
+                    So, the alert could be presented without specifying the parent UIViewController to present one.
                     DESC
   s.homepage         = "https://github.com/thanyalukj/THJAlertController"
   s.license          = 'MIT'
