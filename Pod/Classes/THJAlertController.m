@@ -37,9 +37,18 @@
 }
 
 - (void)show {
-    NSAssert(self.alertWindow, @"To use show(), create THJAlertController with THJAlertControllerWithTitle:message:preferredStyle");
     [self.alertWindow makeKeyAndVisible];
     [self.alertWindow.rootViewController presentViewController:self animated:YES completion:nil];
+}
+
+- (UIWindow *)alertWindow {
+    if (!_alertWindow) {
+        UIWindow *window =  [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        window.rootViewController = [[UIViewController alloc] init];
+        window.windowLevel = UIWindowLevelAlert + 1;
+        _alertWindow = window;
+    }
+    return _alertWindow;
 }
 
 @end

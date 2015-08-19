@@ -14,6 +14,7 @@
 #import "OCMStubRecorder.h"
 
 @interface THJAlertController (Tests)
+@property (nonatomic) UIWindow *alertWindow;
 + (instancetype)THJAlertControllerWithTitle:(NSString *)title
                                     message:(NSString *)message
                              preferredStyle:(UIAlertControllerStyle)preferredStyle
@@ -67,6 +68,17 @@
     [sut show];
 
     [_mockRootViewController verify];
+}
+
+- (void)test_show_fromUIAlertControllerConvenienceMethod_expectAlertViewToBeCreated {
+    [[[_mockWindow stub] andReturn:_mockRootViewController] rootViewController];
+    THJAlertController *sut = [THJAlertController alertControllerWithTitle:@"title"
+                                                                   message:@"message"
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    [sut show];
+    XCTAssertNotNil(sut.alertWindow);
+    XCTAssertEqual(sut.alertWindow.windowLevel, UIWindowLevelAlert + 1);
+    XCTAssertNotNil(sut.alertWindow.rootViewController);
 }
 
 @end
